@@ -6,33 +6,23 @@
 
 <h3>
 
-Projeto desenvolvido na #NextLevelWeek5 - promovida pela [Rocketseat], com **NextJS**, **Typescript** e **Sass**.
+Projeto desenvolvido no #AppAcademy 2 - promovido pela [PremierSoft], com **Java**, **Selenium** e **Junit**.
 
 </h3>
 
-![PRINTS](./layouts/preview.gif)
 
 </div>
 
-## 📚 **Sobre**
 
-Plataforma de transmissão de podcast. 
-- Exibe a listagem dos últimos adicionados;
-- Listagem dos demais episódios;
-- Player com os botões: shuffle, previous, play/pause, next e repeat;
-- Página dinâmica de exibição de um episódio com sua descrição;
 
 <br>
 
-### 📌  **Tecnologias utilizadas**
-- [ReactJS]
-- [NextJS]
-- [TypeScript]
-- [Sass]
-- [date-fns]
-- [JSON-server]
-- [axios]
-- [rc-slider]
-- [LottieFiles]
+### 📌  **Desafio de Java**
+- [Orientacao a Objeto]
+- [Logica de Programacao]
+- [Atomacao de testes Web]
+- [Selenium]
+- [Junit]
+
 
 <br>
