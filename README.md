@@ -1,6 +1,6 @@
 <div align=center>
 
-  <img src="./layouts/logo.svg" alt="Podcastr logo">
+  <img src="./Capa---Equipe---1584x596px.png" alt="PremierSoft">
   <br>
   <br>
 
