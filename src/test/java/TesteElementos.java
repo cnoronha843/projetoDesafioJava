@@ -506,7 +506,35 @@ public class TesteElementos {
         Navegador.getNavegadorAberto ().setUrl ("https://demoqa.com/tool-tips");
         Navegador.getNavegadorAberto ().acessarSite ();
         Thread.sleep (1000);
+        Actions ac = new Actions(Navegador.getNavegadorAberto ().instanciaChrome ());
+        Navegador.getNavegadorAberto ().instanciaChrome ().executeScript ("scroll(0, +250);");
 
+        WebElement element = Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/a[1]"));
+        ac.moveToElement (element).perform ();
+        Thread.sleep (1000);
+        String toolTip =  Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html/body/div[3]")).getText ();
+
+        WebElement element1 = Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]"));
+        ac.moveToElement (element1).perform ();
+        Thread.sleep (1000);
+        String toolTip1 =  Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html/body/div[3]")).getText ();
+
+        WebElement element2 = Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/input[1]"));
+        ac.moveToElement (element2).perform ();
+        Thread.sleep (1000);
+        String toolTip2 =  Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html/body/div[3]")).getText ();
+
+        WebElement element3 = Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/a[2]"));
+        ac.moveToElement (element3).perform ();
+        Thread.sleep (1000);
+        String toolTip3 =  Navegador.getNavegadorAberto ().instanciaChrome ().findElement (By.xpath ("/html/body/div[3]")).getText ();
+
+
+        Assert.assertTrue (toolTip.equals ("You hovered over the Contrary")&&
+                toolTip1.equals ("You hovered over the Button")
+                && toolTip2.equals ("You hovered over the text field")
+                && toolTip3.equals ("You hovered over the 1.10.32")
+        );
     }
 
 
